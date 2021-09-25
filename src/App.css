@@ -184,10 +184,16 @@ font-size:15px;
 margin-right:10px;
 }
 
+.header{
+	background:linear-gradient(0deg, rgba(128,0,32,0.6), rgba(128,0,32,0.6)), url("./resources/images/bg-04.jpg");
+	color: white;
+}
+.header a{
+	color:white;
+}
 .main{
   height: 86vh;
-  background:linear-gradient(0deg, rgba(128,0,32,0.6), rgba(128,0,32,0.6)), url("./resources/images/bg-04.jpg");
-  background-color: teal;
+  background:url("./resources/images/bg-04.jpg");
 }
 .main h1,.main h2,.main h1,.main h3{
   color: white;
@@ -302,4 +308,8 @@ img {
 
 img:hover {
 	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .how{
+	font-family: 'Italianno', cursive;
   }

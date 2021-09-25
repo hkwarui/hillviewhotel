@@ -4,17 +4,17 @@ import { LinkContainer } from 'react-router-bootstrap'
 import {Navbar, Nav, Container, NavDropdown, Col} from 'react-bootstrap'
 
 
-import logo from '../resources/images/logo.jpeg'
+import logo from '../resources/images/logo.png'
 
 const Header = () => {
 
 
   return (
-    <header>
-<Navbar bg="light" expand="lg">
+    <header >
+<Navbar className="header navbar navbar-dark">
   <Container>
   <LinkContainer to='/'>
-    <Navbar.Brand > <img src={logo} width="100" height="100" fluid /> </Navbar.Brand>
+    <Navbar.Brand > <img src={logo} width="100" height="100" fluid /></Navbar.Brand>
     </LinkContainer>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -44,8 +44,39 @@ const Header = () => {
         </LinkContainer>
       </Nav>
     </Navbar.Collapse>
+
+    <span className="navbar-text">
+    <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+            A Five Star Hotel
+            <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+    </span>
+
   </Container>
 </Navbar>
+
+{/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Navbar text with an inline element
+    </span>
+  </div>
+</nav> */}
+
     </header>
   )
 }

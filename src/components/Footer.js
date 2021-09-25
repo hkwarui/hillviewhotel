@@ -1,7 +1,7 @@
 import React from "react"
 import {Container, Navbar,Nav} from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-import logo from '../resources/images/logo.jpeg'
+import logo from '../resources/images/logo.png'
 const Footer = () => 
 <footer className="page-footer font-small blue pt-4" style={{borderTop:"solid  ##800020", marginTop:"1% "}}>
     <div className="container-fluid text-center text-md-left">

@@ -8,7 +8,7 @@ import coursel1 from "../resources/images/1.jpg"
 import coursel2 from "../resources/images/2.jpg"
 import coursel3 from "../resources/images/4.jpg"
 import coursel4 from "../resources/images/6.jpg"
-import logo from '../resources/images/logo.jpeg'
+import logo from '../resources/images/logo.png'
 
 const HomeScreen = ()=>{
     const [index, setIndex] = useState(0);
@@ -23,17 +23,8 @@ const HomeScreen = ()=>{
 <Row className="main text-center">
      
         <Col className="my-auto" md={12}>
-        <img src={logo} width="200" height="200" fluid />
-            <h1> HIGHLAND VIEW HOTEL </h1>
-        <h2> 
-            <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
-            A Five Star Hotel
-            <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
-        </h2>
-        <h3>
-            And we like to keep it that way
-        </h3>
-        <Button variant="primary">SEE ALL ROOMS</Button>{' '}
+        
+         
         </Col>
         <Col md={12}>
         <Container>
@@ -72,6 +63,7 @@ const HomeScreen = ()=>{
   </Button>
       </Form.Group>
 
+
   </Row>
 
  
@@ -80,6 +72,11 @@ const HomeScreen = ()=>{
 
 
 </Form>
+<Row>
+<Col md={12}>
+<Button variant="primary">SEE ALL ROOMS</Button>{' '}
+</Col>
+</Row>
 </Container>
 </Col>
     </Row>
@@ -345,41 +342,41 @@ const HomeScreen = ()=>{
     <section>
     <h1 class="text-center" id="header">Hotel Tabs </h1>
     <Row>
-        <Col>
+        <Col xs={12} md={6}>
             <Row>
-                <Col md={6} className="tinted-image1 tint">
+                <Col xs={12} md={6} className="tinted-image1 tint">
                     <div className="p-4">
-                         <h1>Single Room</h1>
+                         <h1 className="how">Single Room</h1>
                          <h2>Starting from $120/night</h2>
 
                     </div>
                 </Col>
-                <Col md={6} className="tinted-image2 tint">
+                <Col md={6} xs={12} className="tinted-image2 tint">
                 <div className="p-4">
-                <h1>Double Room</h1>
+                <h1 className="how">Double Room</h1>
                          <h2>Starting from $200/night</h2>
 
                 </div>
                 
                 </Col>
-                <Col md={6} className="tinted-image3 tint">
+                <Col md={6} xs={12} className="tinted-image3 tint">
                 <div className="p-4">
-                <h1>Family Apartment</h1>
-                         <h2>Starting from $300/night </h2>
+                <h1 >Family Apartment</h1>
+                         <h2 className="how">Starting from $300/night </h2>
                 </div>
                 
                 </Col>
-                <Col md={6} className="tinted-image4 tint">
+                <Col md={6} xs={12} className="tinted-image4 tint">
                 <div className="p-4">
                 <h1>Premium Apartment</h1>
-                <h2>Starting from $400/night </h2>
+                <h2 className="how" >Starting from $400/night </h2>
                 </div>
                 </Col>
             </Row>
 
         </Col>
      
-        <Col>
+        <Col xs={12} md={6}>
       
         <Tabs
       id="controlled-tab-example"
